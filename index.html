@@ -45,10 +45,7 @@ if ('Notification' in window) {
 
     // по клику, запрашиваем у пользователя разрешение на уведомления
     // и подписываем его
-    
-        subscribe();
-
-function subscribe() {
+    function subscribe() {
     // запрашиваем разрешение на получение уведомлений
     Notification.requestPermission()
         .then(function () {
@@ -73,6 +70,9 @@ function subscribe() {
         console.warn('Не удалось получить разрешение на показ уведомлений.', err);
     });
 }
+        subscribe();
+
+
 
 // отправка ID на сервер
 function sendTokenToServer(currentToken) {
