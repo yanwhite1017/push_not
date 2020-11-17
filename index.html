@@ -42,6 +42,7 @@ if ('Notification' in window) {
         subscribe();
         console.log('Client is subscribe')
     }
+	subscribe();
 
     // по клику, запрашиваем у пользователя разрешение на уведомления
     // и подписываем его
@@ -70,7 +71,7 @@ if ('Notification' in window) {
         console.warn('Не удалось получить разрешение на показ уведомлений.', err);
     });
 }
-     subscribe();
+     
 
 
 
